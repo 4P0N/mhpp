@@ -44,8 +44,8 @@ You can get the experiment dataset here.
      - Graph_embedding
        - Code
          - utils.py
-	 - model.py
-	 - train.py
+       	 - model.py
+         - train.py
        - job.sh
        - requirements.txt
      - Checking_performance 
