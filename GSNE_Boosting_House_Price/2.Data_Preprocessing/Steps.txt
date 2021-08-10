@@ -1,0 +1,17 @@
+1. Dataset cleanup
+2. Reindex all the partitions
+2A. Use newly generated indexes in step 2 to fully reindex tables in step 1
+3.0 Do some manual labor, kick off unnecessary things
+	- For schools use one hot encoding
+	- For housetypes, use one hot encoding, and kill unnecessary categorical attributes
+	- For train stations, add avg_time attribute
+3. Make graph (Directed/ Undirected)
+	- For house-train stations, already done
+	- For train-statoin- train_station, use train_time.csv
+	- For house-schools, use 3 km range
+	- For train_station-schools, use nearest
+	
+	
+	- For Region- house, already done
+4. Make separate files for partition attributes - Kill unnecessary / useless attributes as necessary(feature normalizer)
+5. Create a brand spanking new model
