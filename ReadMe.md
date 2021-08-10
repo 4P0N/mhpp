@@ -1,11 +1,11 @@
-**Boosting House Price Predictions using Geo-Spatial Network Embedding**
+# Boosting House Price Predictions using Geo-Spatial Network Embedding
 
 
 
 We propose a novel geo-spatial network embedding (GSNE) framework that can accurately capture the geo-spatial neighborhood context in terms of different types of POI and their features, and the relationships among these POIs in a weighted, attributed multipartite graph.
 – We adopt and extend the Gaussian embedding methods to realize our GSNE framework, which is highly efficient and can work with heterogeneous types of nodes and features.
 – Our comprehensive evaluation on a large real-estate dataset shows that for the house prediction task, combining geo-spatial embedded vectors learned by GSNE with the housing features results in consistently better prediction performance than raw feature only, regardless of the downstream regression model.
-#Dataset:
+## Dataset:
 
 We conducted our experiments on the house transaction records obtained from a real-estate website2 for Melbourne, which is the second largest city in Australia by population.We extracted a total of the 52,851 house transaction records of years from 2013 to 2015. Our dataset also includes the three types of POIs: regions, schools, and train stations and their corresponding features. Houses are situated in regions which capture the geographical contextual information about houses. Intuitively, information about nearby schools and train stations may influence house prices. Our dataset contains information of the 13,340 regions, 709 schools, and 218 train stations.
 
@@ -28,43 +28,39 @@ average time to reach to other stations.
 
 You can get the experiment dataset here.
 
-Project Structure:
+## Project Structure:
 
-Repository
-    |
-    |-- GSNE_Boosting_House_Price
-        |
-        |-- 1. Dataset
-	 |
-	 |-- Check_Performance_Dataset
-		*** contains check performance required datasets  ***
-	 |-- Preprocessed_Dataset
-		*** Main raw data ***
-	 |-- Processed_Dataset
- 		*** Processed npz files ***
-        |-- 2. Data_Preprocessing
-		*** data-preprocessing codes ***
-        |-- 3. Graph_embedding
-	 |
-	 |-- Code
-	       |-- utils.py
-	       |-- model.py
-	       |-- train.py
-	 |-- job.sh
-	 |-- requirements.txt
-        |-- 4. Checking_performance 
+1. Repository
+   - GSNE_Boosting_House_Price
+     - Dataset
+       - Check_Performance_Dataset
+         -	*** contains check performance required datasets  ***
+       - Preprocessed_Dataset
+         -	*** Main raw data ***
+       - Processed_Dataset
+         -	*** Processed npz files ***
+     - Data_Preprocessing
+       - 	*** data-preprocessing codes ***
+     - Graph_embedding
+       - Code
+	 - utils.py
+	 - model.py
+	 - train.py
+       - job.sh
+       - requirements.txt
+     - Checking_performance 
 	 |-- embedding_1
  		*** contains embedded pickle file ***
 	 |-- embedding_2
 		*** contains embedded pickle file ***
 	 |-- check_performance.py
-    |--ReadMe.md
+   -ReadMe.md
 
 
-To run the the project,you have the followings to do-
-1.	Check the requirements in the requirements.txt in the Graph_embedding folder 3 and install them, Then just do python train.py ‘cora-ml’ ‘glace’ 
-or simply run the command ./job.sh in linux system.
-2.	Now for the price prediction from the embedded pickle files in folder 4.Chechking_performance, run python chechk_performance.py
+### To run the the project,you have the followings to do-
+1.	Check the requirements in the requirements.txt in the Graph_embedding folder 3 and install them, Then just do `python train.py ‘cora-ml’ ‘glace’ `
+or simply run the command `./job.sh` in linux system.
+2.	Now for the price prediction from the embedded pickle files in folder 4.Chechking_performance, run `python chechk_performance.py`
 
 
 
