@@ -43,18 +43,18 @@ You can get the experiment dataset here.
        - 	*** data-preprocessing codes ***
      - Graph_embedding
        - Code
-	 - utils.py
+         - utils.py
 	 - model.py
 	 - train.py
        - job.sh
        - requirements.txt
      - Checking_performance 
-	 |-- embedding_1
- 		*** contains embedded pickle file ***
-	 |-- embedding_2
-		*** contains embedded pickle file ***
-	 |-- check_performance.py
-   -ReadMe.md
+       - embedding_1
+         - 	*** contains embedded pickle file ***
+       - embedding_2
+	 - 	*** contains embedded pickle file ***
+       - check_performance.py
+   - ReadMe.md
 
 
 ### To run the the project,you have the followings to do-
