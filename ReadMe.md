@@ -1,4 +1,4 @@
-# Boosting House Price Predictions using Geo-Spatial Network Embedding
+# Boosting House Price Predictions using Multi-Modal House Price Predictor
 
 
 
