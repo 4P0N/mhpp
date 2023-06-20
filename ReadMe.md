@@ -2,9 +2,13 @@
 
 
 
-We propose a novel geo-spatial network embedding (GSNE) framework that can accurately capture the geo-spatial neighborhood context in terms of different types of POI and their features, and the relationships among these POIs in a weighted, attributed multipartite graph.
-– We adopt and extend the Gaussian embedding methods to realize our GSNE framework, which is highly efficient and can work with heterogeneous types of nodes and features.
-– Our comprehensive evaluation on a large real-estate dataset shows that for the house prediction task, combining geo-spatial embedded vectors learned by GSNE with the housing features results in consistently better prediction performance than raw feature only, regardless of the downstream regression model.
+Real estate business is the profession of buying, selling, or renting real estate(land, buildings, or housing).1 In this world of depereciated assets, real estate business provides the foresight of a long lasting savings in current the world economy. Thus it is a major concern for not only the clientele like buyers or tenants but also for sellers ranging from different different stakeholders and companies. So far, a lot of techniques leveraging different sets of algorithms
+including machine learning has been applied considering different sets of attributes to predict the house price as precise as possible. However, all of them
+have failed to take into account all the possible attributes ranging from their raw features, geo-spatial properties, textual description to even their visual representations. In real world, all of them have significant contributions in correctly determining determining house price as well as interest of the house
+buyers. In this paper, we take into account all these attributes of different domains used in advertising a house fro a real life house flyer. We proposed a
+Multi-Modal House Price Predictor (MHPP) that captures embedding form geo-spatial context considering different point of interrests (POIs), textual
+embedding from the description of the house present and image embedding form different interior and exterior visuals of the house. Our extensive experimentation shows that embedding captured in our Multi-Modal House Price Predictor from all these possible attributes for a particular house significantly
+improves the house price prediction task , irrespective of the choice of downstream regression model.
 ## Dataset:
 
 We conducted our experiments on the house transaction records obtained from a real-estate website2 for Melbourne, which is the second largest city in Australia by population.We extracted a total of the 52,851 house transaction records of years from 2013 to 2015. Our dataset also includes the three types of POIs: regions, schools, and train stations and their corresponding features. Houses are situated in regions which capture the geographical contextual information about houses. Intuitively, information about nearby schools and train stations may influence house prices. Our dataset contains information of the 13,340 regions, 709 schools, and 218 train stations.
