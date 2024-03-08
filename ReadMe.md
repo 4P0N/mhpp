@@ -1,4 +1,4 @@
-# Bosting House Price Predictions using Multi-Modal House Price Predictor
+# Boosting House Price Predictions using Multi-Modal House Price Predictor
 
 
 
