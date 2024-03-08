@@ -33,7 +33,42 @@ students, zone restrictions, number of students enrolled in Victorian Certificat
 average time to reach to other stations.
 
 
-You can get the experiment dataset [here](https://drive.google.com/drive/folders/1ssAjH8b8GGVlYohIdhyZPKje2sGeXggB?usp=sharing).
+<!-- You can get the experiment dataset [here](https://drive.google.com/drive/folders/1ssAjH8b8GGVlYohIdhyZPKje2sGeXggB?usp=sharing).
+
+## Project Structure:
+
+1. Repository
+   - GSNE_Boosting_House_Price
+     - Dataset
+       - Check_Performance_Dataset
+         -	*** contains check performance required datasets  ***
+       - Preprocessed_Dataset
+         -	*** Main raw data ***
+       - Processed_Dataset
+         -	*** Processed npz files ***
+     - Data_Preprocessing
+       - 	*** data-preprocessing codes ***
+     - Graph_embedding
+       - Code
+         - utils.py
+       	 - model.py
+         - train.py
+       - job.sh
+       - requirements.txt
+     - Checking_performance 
+       - embedding_1
+         - 	*** contains embedded pickle file ***
+       - embedding_2
+	 - 	*** contains embedded pickle file ***
+       - check_performance.py
+   - ReadMe.md
+
+
+### To run the the project,you have the followings to do-
+1.	Check the requirements in the requirements.txt in the Graph_embedding folder 3 and install them, Then just do `python train.py ‘cora-ml’ ‘glace’ `
+or simply run the command `./job.sh` in linux system.
+2.	Now for the price prediction from the embedded pickle files in folder 4.Chechking_performance, run `python chechk_performance.py`
 
 
 
+ -->
