@@ -12,21 +12,15 @@ Our experimentation was conducted using a dataset comprising records of house tr
 ![dataset](https://github.com/4P0N/mhpp/assets/70822909/3d6208d7-0265-49e1-90f6-3a4f5987b266)
 
 
-**Housing Features**: Our dataset contains information about a wide range of housing features. In
-total, we consider 43 housing features for each house for in depth exploration of the effect of GSNE. To the best of our knowledge, none of the prior works considered such a wide range of feature sets in a large dataset like ours for house price prediction task. Although the dataset in Kaggle competition has 86 features, it has only 3000 samples in total and lots of columns are highly sparse rendering only a few of those columns truly useful. Besides, no information regarding neighbourhood amenities is available in that dataset. In our dataset, each house record contains information ranging from basic housing features like number of bedrooms, number of bathrooms, number of parking spaces, location, type of property, etc. to detailed facility features like air-conditioning, balcony, city-view,river-view, swimming, tennis-court, etc.
+**House and POI Features**: Our dataset encompasses an extensive array of house attributes for each property, totaling 43 distinct features. These features span a spectrum from fundamental characteristics such as the number of bedrooms and bathrooms to intricate facility-related attributes like the presence of air-conditioning and tennis courts. Moreover, the dataset offers comprehensive insights into Melbourne's various regions at the SA1 level, incorporating details such as population count, average age, median personal income, and educational qualifications.
 
-**Region Features**: Our dataset contains Melbourne region information at SA1 level3. SA1 is the
-most granular unit for the release of census data of Australia. The SA1 data typically has a
-population of 200 to 800 people with an average of 400 people per region. For each region, our
-dataset contains comprehensive information about the number of residents, average age, median personal income, percentage of Australian citizens, educational qualification, median house rent,location as the centroid of the region, etc. Since these aspects can be useful for determining house prices, we consider all of them as the features for regions.
+Furthermore, the dataset is enriched with information regarding different Points of Interest (POIs), including schools and train stations. These POIs are further categorized and accompanied by timetable data and precise location information.
 
-**School Features**: The schools in our dataset are attributed with the type of school (primary
-or secondary), school category by gender(single gender or co-ed), ranking, location, number of
-students, zone restrictions, number of students enrolled in Victorian Certificate of Education(VCE), percentage of students securing 40% marks, etc
+**House Descriptions**: The dataset also provides textual descriptions for each of the houses, capturing various aesthetics and features that may not be readily quantified. These descriptions exhibit varying lengths, with some extending up to a maximum of 280 words. An illustrative example of a textual description from the dataset is shown in Figure \ref{fig:data}(d).
+
+**House Images**: Each property in the dataset typically features an average of five distinct images. These images collectively portray both the interior and exterior aspects of the houses. It is  worth noting that while some houses may have been missing one image within this five-image set, we mitigated this by duplicating one of the four available images to maintain consistency. In our setting, we used the collage of five distinctive images to learn the correlation between house images and descriptions.
 
 
-**Train Stations**: The train stations in the dataset contain information about their location and
-average time to reach to other stations.
 
 
 <!-- You can get the experiment dataset [here](https://drive.google.com/drive/folders/1ssAjH8b8GGVlYohIdhyZPKje2sGeXggB?usp=sharing).
