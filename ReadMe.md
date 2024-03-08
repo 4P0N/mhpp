@@ -7,7 +7,7 @@ Accurate prediction of house price, a vital aspect of the residential real estat
 
 We conducted our experiments on the house transaction records obtained from a real-estate website2 for Melbourne, which is the second largest city in Australia by population.We extracted a total of the 52,851 house transaction records of years from 2013 to 2015. Our dataset also includes the three types of POIs: regions, schools, and train stations and their corresponding features. Houses are situated in regions which capture the geographical contextual information about houses. Intuitively, information about nearby schools and train stations may influence house prices. Our dataset contains information of the 13,340 regions, 709 schools, and 218 train stations.
 
-![dataset](https://github.com/4P0N/mhpp/assets/70822909/fcdb9e76-ccfb-44d8-afe9-53fe31408eef)
+![dataset](https://github.com/4P0N/mhpp/assets/70822909/3d6208d7-0265-49e1-90f6-3a4f5987b266)
 
 
 **Housing Features**: Our dataset contains information about a wide range of housing features. In
