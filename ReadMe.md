@@ -1,8 +1,9 @@
 # A Multi-Modal Deep Learning Based Approach for House Price Prediction
 
-
-
 Accurate prediction of house price, a vital aspect of the residential real estate sector, is of substantial interest for a wide range of stakeholders. However, predicting house prices is a complex task due to the significant variability influenced by factors such as house features, location, neighborhood, and many others. Despite numerous attempts utilizing a wide array of algorithms, including recent deep learning techniques, to predict house prices accurately, existing approaches have fallen short of considering a wide range of factors such as textual and visual features. This paper addresses this gap by comprehensively incorporating attributes, such as features, textual descriptions, geo-spatial neighborhood, and house images, typically showcased in real estate listings in a house price prediction system. Specifically, we propose a multi-modal deep learning approach that leverages different types of data to learn more accurate representation of the house. In particular, we learn a joint embedding of raw house attributes, geo-spatial neighborhood, and most importantly from textual description and images representing the house; and finally use a downstream regression model to predict the house price from this jointly learned embedding vector. Our experimental results with a real-world dataset show that the text embedding of the house advertisement description and image embedding of the house pictures in addition to raw attributes and geo-spatial embedding, can significantly improve the house price prediction accuracy.
+
+
+
 ## Dataset:
 
 Our experimentation was conducted using a dataset comprising records of house transactions sourced from a prominent real estate [website](https://www.realestate.com.au/). The dataset encompasses real estate transactions in Melbourne, Australia's second-largest city in terms of population. It encompasses a total of 52,851 house transaction records from year 2013 to 2015. Furthermore, the dataset includes valuable details about nearby Points of Interest (POIs), encompassing regions, schools and train stations. This dataset comprehensively covers information related to 13,340 regions, 709 schools and 218 train stations. Additionally, each record within the dataset includes a concise textual description and images of the houses.
