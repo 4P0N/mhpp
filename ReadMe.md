@@ -16,9 +16,9 @@ Our experimentation was conducted using a dataset comprising records of house tr
 
 Furthermore, the dataset is enriched with information regarding different Points of Interest (POIs), including schools and train stations. These POIs are further categorized and accompanied by timetable data and precise location information.
 
-**House Descriptions**: The dataset also provides textual descriptions for each of the houses, capturing various aesthetics and features that may not be readily quantified. These descriptions exhibit varying lengths, with some extending up to a maximum of 280 words. An illustrative example of a textual description from the dataset is shown in Figure \ref{fig:data}(d).
+**House Descriptions**: The dataset also provides textual descriptions for each of the houses, capturing various aesthetics and features that may not be readily quantified. These descriptions exhibit varying lengths, with some extending up to a maximum of 280 words. An illustrative example of a textual description from the dataset is shown in sub-figure (d).
 
-**House Images**: Each property in the dataset typically features an average of five distinct images. These images collectively portray both the interior and exterior aspects of the houses. It is  worth noting that while some houses may have been missing one image within this five-image set, we mitigated this by duplicating one of the four available images to maintain consistency. In our setting, we used the collage of five distinctive images to learn the correlation between house images and descriptions.
+**House Images**: Each property in the dataset typically features an average of five distinct images. These images collectively portray both the interior and exterior aspects of the houses as showed in the sub-figure (e). It is  worth noting that while some houses may have been missing one image within this five-image set, we mitigated this by duplicating one of the four available images to maintain consistency. In our setting, we used the collage of five distinctive images to learn the correlation between house images and descriptions.
 
 
 
